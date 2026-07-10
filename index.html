@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>On Air | Portfolio Template</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;800&family=Space+Grotesk:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="intro-modal" id="intro-modal">
+    <div class="intro-modal-box">
+      <p class="intro-modal-note">Best experienced on desktop</p>
+      <p class="intro-modal-text">Drag the <strong>TUNE</strong> knob left and right to change frequencies. Turn the <strong>VOLUME</strong> knob up and down to adjust volume.</p>
+      <button id="intro-modal-ok">OK</button>
+    </div>
+  </div>
+
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightbox-close" aria-label="Close">&times;</button>
+    <button class="lightbox-arrow lightbox-prev" id="lightbox-prev" aria-label="Previous image">&#10094;</button>
+    <img class="lightbox-image" id="lightbox-image" src="" alt="">
+    <button class="lightbox-arrow lightbox-next" id="lightbox-next" aria-label="Next image">&#10095;</button>
+    <div class="lightbox-counter" id="lightbox-counter"></div>
+  </div>
+
+  <div class="radio-unit">
+
+    <!-- ===== SCREEN ===== -->
+    <div class="screen">
+      <div class="station-panels" id="station-panels">
+
+        <section class="station" data-freq="88" id="station-home">
+          <span class="station-tag">Home</span>
+          <div class="home-layout">
+            <div class="placeholder-box home-photo"><span class="placeholder-label">[ PHOTO ]</span></div>
+            <div class="home-text">
+              <p class="station-eyebrow">[Your tagline / role]</p>
+              <h1>[Your Name]</h1>
+              <p class="station-body">[One or two sentences summarizing who you are.]</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="station" data-freq="90" id="station-about">
+          <span class="station-tag">About</span>
+          <div class="about-layout">
+            <div class="placeholder-box about-photo"><span class="placeholder-label">[ PHOTO ]</span></div>
+            <p class="station-body">[Write 2–4 sentences about who you are, what you do, and what drives you. Keep it in your own voice, not a formal bio tone.]</p>
+          </div>
+        </section>
+
+        <section class="station" data-freq="92" id="station-experience">
+          <span class="station-tag">Experience</span>
+          <div class="timeline">
+            <div class="timeline-item"><span class="timeline-date">[Year - Present]</span><h3>[Role / Title]</h3><p>[What this was and what you actually did.]</p></div>
+            <div class="timeline-item"><span class="timeline-date">[Year]</span><h3>[Role / Title]</h3><p>[What this was and what you actually did.]</p></div>
+            <div class="timeline-item"><span class="timeline-date">[Year - Year]</span><h3>[Role / Title]</h3><p>[What this was and what you actually did.]</p></div>
+          </div>
+        </section>
+
+        <section class="station" data-freq="94" id="station-skills">
+          <span class="station-tag">Skills</span>
+          <div class="skills-grid">
+            <div class="skill"><div class="skill-icon"><img src="assets/logos/skill1.png" alt="[Skill 1]"></div><span class="skill-name">[Skill 1]</span></div>
+            <div class="skill"><div class="skill-icon"><img src="assets/logos/skill2.png" alt="[Skill 2]"></div><span class="skill-name">[Skill 2]</span></div>
+            <div class="skill"><div class="skill-icon"><img src="assets/logos/skill3.png" alt="[Skill 3]"></div><span class="skill-name">[Skill 3]</span></div>
+            <div class="skill"><div class="skill-icon"><img src="assets/logos/skill4.png" alt="[Skill 4]"></div><span class="skill-name">[Skill 4]</span></div>
+            <div class="skill"><div class="skill-icon"><img src="assets/logos/skill5.png" alt="[Skill 5]"></div><span class="skill-name">[Skill 5]</span></div>
+            <div class="skill"><div class="skill-icon"><img src="assets/logos/skill6.png" alt="[Skill 6]"></div><span class="skill-name">[Skill 6]</span></div>
+          </div>
+        </section>
+
+        <section class="station" data-freq="96" id="station-projects">
+          <span class="station-tag">Projects</span>
+          <div class="projects-grid">
+            <div class="project-card"><div class="image-slot" data-project="project-one"><img src="assets/projects/project-one/1.jpg" alt="[Project One]"><span class="gallery-hint">⤢ View gallery</span></div><h3>[Project One]</h3><p>[What it is, what it does, tools used. This description can be as long as it needs to be — the card will scroll internally if the content runs long, so don't force it short.]</p></div>
+            <div class="project-card"><div class="image-slot" data-project="project-two"><img src="assets/projects/project-two/1.jpg" alt="[Project Two]"><span class="gallery-hint">⤢ View gallery</span></div><h3>[Project Two]</h3><p>[What it is, what it does, tools used.]</p></div>
+            <div class="project-card"><div class="image-slot" data-project="project-three"><img src="assets/projects/project-three/1.jpg" alt="[Project Three]"><span class="gallery-hint">⤢ View gallery</span></div><h3>[Project Three]</h3><p>[What it is, what it does, tools used.]</p></div>
+            <div class="project-card"><div class="image-slot" data-project="project-four"><img src="assets/projects/project-four/1.jpg" alt="[Project Four]"><span class="gallery-hint">⤢ View gallery</span></div><h3>[Project Four]</h3><p>[What it is, what it does, tools used.]</p></div>
+          </div>
+        </section>
+
+        <section class="station" data-freq="98" id="station-hobbies">
+          <span class="station-tag">Hobbies</span>
+          <div class="hobbies-grid">
+            <div class="hobby">
+              <div class="image-slot"><img src="assets/hobbies/hobby-one.jpg" alt="[Hobby One]"></div>
+              <h3>[Hobby One]</h3>
+              <p>[Short description.]</p>
+              <div class="hobby-links">
+                <a href="https://example.com" target="_blank" rel="noopener noreferrer">[Related link]</a>
+              </div>
+            </div>
+            <div class="hobby">
+              <div class="image-slot"><img src="assets/hobbies/hobby-two.jpg" alt="[Hobby Two]"></div>
+              <h3>[Hobby Two]</h3>
+              <p>[Short description.]</p>
+            </div>
+            <div class="hobby">
+              <div class="image-slot"><img src="assets/hobbies/hobby-three.jpg" alt="[Hobby Three]"></div>
+              <h3>[Hobby Three]</h3>
+              <p>[Short description.]</p>
+            </div>
+            <div class="hobby">
+              <div class="image-slot"><img src="assets/hobbies/hobby-four.jpg" alt="[Hobby Four]"></div>
+              <h3>[Hobby Four]</h3>
+              <p>[Short description.]</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="station" data-freq="100" id="station-contact">
+          <span class="station-tag">Contact</span>
+          <ul class="contact-links">
+            <li><a href="mailto:you@example.com">Email</a></li>
+            <li><a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+            <li><a href="https://example.com" target="_blank" rel="noopener noreferrer">[Other link]</a></li>
+          </ul>
+        </section>
+
+        <!-- Optional easter egg: hidden below the printed dial range, only reachable
+             by typing the exact SECRET_FREQ value from script.js into the readout.
+             Delete this whole <section> (and its logic in script.js) if you'd
+             rather not have a hidden station at all. -->
+        <section class="station numbers-station" data-freq="84" id="station-numbers">
+          <p class="numbers-word" id="numbers-word">—</p>
+        </section>
+
+      </div>
+
+      <div class="no-signal" id="no-signal">
+        <div class="eq-bars"><span></span><span></span><span></span><span></span><span></span></div>
+        <p>SEARCHING…</p>
+      </div>
+    </div>
+
+    <!-- ===== TUNER PANEL ===== -->
+    <div class="tuner-panel">
+
+      <div class="scale-window" id="scale-window">
+        <div class="scale-labels" id="scale-labels"></div>
+        <div class="scale-ticks" id="scale-ticks"></div>
+        <div class="scale-glass"></div>
+        <div class="needle" id="needle"></div>
+      </div>
+
+      <div class="control-row">
+        <div class="knob-group">
+          <div class="knob knob-horizontal" id="tuning-knob"><div class="knob-indicator"></div></div>
+          <span class="knob-label">TUNE</span>
+        </div>
+
+        <div class="readout-block">
+          <span class="readout-section" id="readout-section">HOME</span>
+          <div class="readout">
+            <input type="text" id="freq-input" inputmode="decimal" value="88">
+            <small>FM</small>
+          </div>
+        </div>
+
+        <div class="knob-group">
+          <div class="knob" id="volume-knob"><div class="knob-indicator"></div></div>
+          <span class="knob-label">VOL</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
